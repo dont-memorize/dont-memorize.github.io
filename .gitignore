@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+
+# Dependency and build output folders if the site later gets a build step
+node_modules/
+dist/
+build/
+.cache/
