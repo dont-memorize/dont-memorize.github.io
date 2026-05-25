@@ -53,6 +53,12 @@ a {
   gap: 18px;
   max-width: 1180px;
   margin: 0 auto;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 8px;
+  background: rgba(13, 35, 38, 0.68);
+  box-shadow: 0 14px 32px rgba(10, 28, 30, 0.22);
+  backdrop-filter: blur(12px);
 }
 
 .brand {
@@ -75,21 +81,24 @@ a {
 
 .nav-links {
   display: flex;
-  gap: 18px;
+  gap: 6px;
   align-items: center;
   font-size: 0.95rem;
-  font-weight: 650;
+  font-weight: 800;
 }
 
 .nav-links a {
-  opacity: 0.92;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--white);
+  opacity: 1;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.38);
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  opacity: 1;
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  background: rgba(255, 255, 255, 0.16);
+  outline: none;
 }
 
 .hero {
@@ -365,8 +374,27 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
+}
+
+.footer-contact {
+  display: grid;
+  gap: 6px;
+}
+
+.footer-contact h2 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.84);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 @media (max-width: 880px) {
